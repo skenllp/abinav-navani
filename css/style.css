@@ -222,17 +222,19 @@ code{font-family:ui-monospace,"Cascadia Code",Consolas,monospace;font-size:.85em
 .landing-inner .divider{animation:riseIn 1.5s .6s var(--ease) both}
 
 .landing-names{
-  margin-top:16px;font-family:var(--f-display);font-weight:300;
-  font-size:clamp(38px,11.5vw,86px);line-height:1.05;letter-spacing:.01em;
-  display:flex;flex-direction:column;align-items:center;gap:2px;
+  margin:16px auto 0;font-family:var(--f-display);font-weight:300;
+  font-size:clamp(34px,8.5vw,78px);line-height:1.1;letter-spacing:.01em;
+  display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.3em;
   color:#FFF6E3;
   text-shadow:0 2px 30px rgba(255,196,110,.32),0 1px 3px rgba(0,0,0,.4);
+  text-align:center;
+  width:100%;
 }
-.landing-names .n{animation:riseIn 1.6s .8s var(--ease) both}
+.landing-names .n{display:inline-block;white-space:nowrap;animation:riseIn 1.6s .8s var(--ease) both}
 .landing-names .n:last-child{animation-delay:1.05s}
 .landing-names .amp{
-  font-family:var(--f-display);font-style:italic;font-size:.44em;
-  color:var(--gold-lt);opacity:.9;margin:2px 0;
+  font-family:var(--f-display);font-style:italic;font-size:.68em;
+  color:var(--gold-lt);opacity:.9;margin:0 0.15em;display:inline-block;
   animation:riseIn 1.6s .95s var(--ease) both;
 }
 .landing-date{
@@ -419,16 +421,20 @@ body:not(.is-revealed) #site *{animation-play-state:paused!important}
   color:rgba(74,52,32,.62);
 }
 .hero-names{
-  display:flex;flex-direction:column;align-items:center;gap:0;
+  display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;gap:0.3em;
   font-family:var(--f-display);font-weight:300;
-  font-size:clamp(32px,9vw,58px);line-height:.98;letter-spacing:.01em;
+  font-size:clamp(30px,7.5vw,56px);line-height:1.1;letter-spacing:.01em;
   color:#3A2414;
   text-shadow:0 1px 0 rgba(255,246,220,.55);
+  text-align:center;
+  margin:10px auto;
+  width:100%;
 }
-.hero-names__n{display:block}
+.hero-names__n{display:inline-block;white-space:nowrap;}
 .hero-names__amp{
   font-family:var(--f-display);font-style:italic;font-weight:300;
-  font-size:.42em;line-height:1;margin:clamp(2px,1%,6px) 0;color:#9C7C38;
+  font-size:.68em;line-height:1;margin:0 0.15em;color:#9C7C38;
+  display:inline-block;
 }
 .hero-date{
   margin-top:clamp(10px,3.5%,20px);
